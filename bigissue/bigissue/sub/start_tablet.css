@@ -1,0 +1,332 @@
+@charset "utf-8";
+/* COMMON ---- S */
+#ad_wrap {
+    display: none;
+}
+.pc_con {
+    display: none;
+}
+.t_con {
+    display: block;
+}
+.m_con {
+    display: block;
+}
+.center {
+    width: initial;
+}
+.btn_top {
+    right: 3%;
+    bottom: 10%;
+}
+/* COMMON ---- E */
+
+/* HEADER ---- S */
+#bigissue_hd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+}
+.logo {
+    width: 100px;
+    height: 72px;
+    margin: 0;
+}
+.logo > a {
+    width: 100%;
+    height: 100%;
+}
+.m_btn_gnb {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    z-index: 9999;
+    width: 35px;
+    height: 35px;
+    border-style: none;
+    background: url("../img/btn_gnb.svg") no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+    transition: 0.2s;
+}
+.m_btn_gnb.off {
+    background: url("../img/btn_gnb_exit.svg") no-repeat;
+    background-size: cover;
+}
+#bigissue_m_gnb {
+    display: block;
+    position: fixed;
+    z-index: 9990;
+    top: 0;
+    right: -70%;
+    width: 60%;
+    height: 100%;
+    padding-top: 140px;
+    background: #fff;
+    transition: 0.6s;
+}
+#bigissue_m_gnb.active {
+    right: 0;
+}
+.bg_gnb.active {
+    position: fixed;
+    z-index: 9980;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    transition: 0.4s;
+}
+.m_depth1 {
+    display: block;
+    padding-right: 20px;
+    padding-left: 70px;
+    border-bottom: 1px solid #b2b2b2;
+    line-height: 70px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    background: url("../img/btn_gnb_more.svg") no-repeat right center;
+    background-origin: content-box;
+    background-size: 25px 25px;
+}
+.m_depth1.off {
+    background: url("../img/btn_gnb_closed.svg") no-repeat right center;
+    background-origin: content-box;
+    background-size: 25px 25px;
+}
+.m_depth2 {
+    display: none;
+    border-bottom: 1px solid #b2b2b2;
+    font-size: 2rem;
+    line-height: 60px;
+    background: #f4f4f4;
+}
+.m_depth2 > li {
+    border-bottom: 1px solid #e4e4e4;
+    padding-left: 90px;
+}
+.login {
+    position: absolute;
+    top: 36px;
+    right: 90px;
+    width: 35px;
+    height: 36px;
+    background: url("../img/btn_user.svg") no-repeat;
+    background-size: cover;
+}
+/* HEADER ---- E */
+
+/* START LNB WRAP ---- S */
+#start_lnb_wrap {
+    height: 300px;
+    margin: 100px 0 0;
+}
+#lnb_wrap {
+    height: 40px;
+}
+.lnb > li {
+    line-height: 40px;
+}
+.lnb > li > a {
+    font-size: 1.6rem;
+}
+/* START LNB WRAP ---- E */
+
+/* M START CONTENT1 ---- S */
+#start_content1_wrap {
+    height: 600px;
+    background: #fff;
+    margin-top: 40px;
+}
+.start_about_video {
+    top: 20%;
+    width: 50vw;
+    height: 22vw;
+}
+.start_about_video > iframe {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.start_about_video > div {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    right: -20px;
+    background: rgba(225, 1, 0, 0.5);
+}
+.start_about_number {
+    height: 600px;
+}
+.start_about_number_top {
+    top: 15%;
+    left: 20px;
+    font-size: 15vw;
+}
+.start_about_number_bottom {
+    right: 20px;
+    bottom: 15%;
+    font-size: 15vw;
+}
+#start_about_txt {
+    top: 30%;
+    left: 20px;
+    margin-top: 10%;
+}
+#start_about_txt > h3 {
+    margin: 20px 0;
+    font-size: 2.6vw;
+}
+#start_about_txt > p {
+    font-size: 2.3vw;
+    line-height: 25px;
+}
+#start_about_txt > p > span {
+    font-size: 1.8vw;
+    line-height: 25px;
+}
+/* M START CONTENT1 ---- E */
+
+/* M START CONTENT2 ---- S */
+#start_content2_wrap {
+    height: 500px;
+    padding-top: 0;
+}
+#start_content2 {
+    height: 100%;
+}
+.start_way_txt {
+    float: none;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+#start_content2_visual {
+    float: none;
+    display: none;
+}
+.start_way > div {
+    width: 27%;
+    margin: 0 20px;
+}
+#btn_start_content2 {
+    float: none;
+    margin: 30px 0 0;
+}
+.start_way > div:nth-of-type(2):after,
+.start_way > div:nth-of-type(3):after {
+    top: 150px;
+}
+/* M START CONTENT2 ---- E */
+
+/* M START CONTENT3 ---- S */
+#start_content3_wrap {
+    top: 0;
+    height: 1000px;
+}
+#start_content3_txt {
+    display: inline-block;
+    width: 100%;
+    top: 70px;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+}
+#start_content3_visual {
+    padding-top: 370px;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+#start_content3_visual > div {
+    width: 28vw;
+    height: 28vw;
+}
+#start_content3_visual > div:nth-of-type(1) {
+    width: 28vw;
+    height: 28vw;
+}
+#btn_benefit {
+    bottom: -30%;
+    width: 600px;
+    margin: 0 auto;
+}
+#btn_benefit > a > span {
+    line-height: 60px;
+}
+.start_benefit_txt > strong {
+    margin-top: 30%;
+    font-size: 3rem;
+}
+.start_benefit_txt > span {
+    font-size: 2rem;
+    line-height: 30px;
+}
+/* M START CONTENT3 ---- E */
+
+/* footer ---- S */
+#bigissue_ft_wrap {
+    height: 590px;
+}
+#bigissue_ft {
+    margin: 0 10px;
+    padding: 30px 0;
+    text-align: center;
+}
+#bigissue_ft > address {
+    margin-bottom: 10%;
+    font-size: 2.2rem;
+}
+#bigissue_ft > address > a {
+    color: #fff;
+}
+.info {
+    display: block;
+    width: 100%;
+}
+.sns_wrap {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+}
+.sns_wrap > a {
+    position: static;
+    display: inline-block;
+    float: none;
+}
+.sitemap_wrap {
+    position: static;
+    display: block;
+    width: 100%;
+}
+.sitebox_wrap {
+    position: static;
+    text-align: center;
+    margin: 30px 0;
+}
+.sitebox_wrap > a {
+    display: inline-block;
+    float: none;
+    width: 120px;
+    font-size: 1.6rem;
+    line-height: 40px;
+}
+.copy {
+    margin-top: 30px;
+    font-size: 1.4rem;
+    line-height: 20px;
+    font-weight: bold;
+}
+/* FOOTER ---- E */

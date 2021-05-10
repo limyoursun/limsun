@@ -1,0 +1,5 @@
+$(function(){$(".btn_light").click(function(){$(".content1_mask_1").attr({"src":"../images/goverment_content1_mask_1_dark.png"});$(this).hide();$(".btn_dark").show();})
+$(".btn_dark").click(function(){$(".content1_mask_1").attr({"src":"../images/goverment_content1_mask_1.png"});$(this).hide();$(".btn_light").show();}) 
+$(".btn_snb").click(function(){$(this).toggleClass("on");})
+$(".btn_snb").click(function(){$("#snb_wrap").toggleClass("active");$(".bg").toggleClass("active");}) 
+$(".bg").click(function(){$(".btn_snb").removeClass("on");$("#snb_wrap").removeClass("active");$(".bg").removeClass("active");})})

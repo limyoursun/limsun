@@ -1,0 +1,238 @@
+@charset "utf-8";
+/* COMMON ---- S */
+body,
+html {
+    font-size: 10px;
+    color: #191919;
+}
+.blind {
+    position: absolute;
+    left: -9999px;
+}
+.center {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.clear_fix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.click:before {
+    position: absolute;
+    left: 33%;
+    content: "";
+    clear: both;
+    display: block;
+    width: 55px;
+    height: 16px;
+    background: url("../img/img_click.png");
+    background-size: cover;
+}
+/* COMMON ---- E */
+
+/* INTRODUCE LNB ---- S */
+#notice_lnb_wrap {
+    width: 100%;
+    height: 425px;
+    margin-bottom: 57px;
+    background: url("../img/bg_introduce_lnb.png") no-repeat center center;
+    background-size: cover;
+}
+#lnb_visual {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#lnb_visual > h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+    transform: translateX(-50%) translateY(-50%);
+}
+.location {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
+.location > li {
+    float: left;
+}
+.location > li > a {
+    color: #fff;
+    font-size: 17px;
+}
+.location > li:nth-of-type(1) > a:after,
+.location > li:nth-of-type(2) > a:after {
+    content: "";
+    clear: both;
+    display: inline-block;
+    width: 5px;
+    height: 12px;
+    margin: 0 10px;
+    background: url("../img/ico_arrow.png") no-repeat;
+}
+#lnb_wrap {
+    height: 57px;
+    border-bottom: 1px solid #e4e4e4;
+}
+.lnb > li {
+    display: inline-block;
+    float: left;
+    width: 25%;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    line-height: 56px;
+    text-align: center;
+}
+.lnb > li:nth-of-type(1) {
+    border-left: 1px solid #e4e4e4;
+    background: #e10100;
+}
+.lnb > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4d4d4d;
+    transition: 0.3s;
+}
+.lnb > li:nth-of-type(1) > a {
+    color: #fff;
+}
+.lnb > li > a:focus,
+.lnb > li > a:hover {
+    background: #e10100;
+    color: #fff;
+}
+/* INTRODUCE LNB ---- E */
+
+#bigissue_hd_wrap {
+    position: relative;
+    z-index: 9990;
+    width: 100%;
+}
+#bigissue_hd {
+    margin-top: 62px;
+    background: #fff;
+}
+.logo {
+    float: left;
+    margin: 18px 0 0;
+}
+.logo > a {
+    display: block;
+    width: 114px;
+    height: 72px;
+    background: url("../img/logo.png") no-repeat;
+    background-size: contain;
+}
+#bigissue_gnb {
+    float: left;
+    top: 0;
+    margin: 37px 0 0 100px;
+}
+#bigissue_gnb:before {
+    content: "";
+    clear: both;
+    position: absolute;
+    top: 107px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #e10100;
+    transition-duration: 0.3s;
+}
+#bigissue_gnb.active:before {
+    height: 270px;
+}
+
+/* EDIT --- S */
+.fa-user-circle:before,
+.fa-pencil,
+.fa-pencil-square-o:before,
+.fa-trash-o:before,
+.fa-files-o:before,
+.fa-arrows:before,
+.fa-list:before,
+.fa-reply:before,
+.fa-commenting-o:before,
+.fa-thumb-tack,
+.fa-clock-o:before{
+display: none;
+}
+#bo_gall a.btn_b02,
+a.btn_b02, .btn_b02,
+.btn_submit{
+background-color: #e10100;
+}
+.center #bo_gall {
+    margin: 50px 0;
+}
+.center #bo_gall .bo_tit {
+    font-size: 2rem;
+}
+.center #bo_cate ul {
+    padding-top: 20px;
+}
+#bo_gall #bo_cate a {
+    border-radius: 0;
+    font-size: 1.6rem;
+    transition: 0.5s;
+}
+#bo_gall #bo_cate a:hover {
+    background: #e10100;
+}
+html #bo_cate #bo_cate_on,
+html #bo_cate #bo_cate_on {
+    background: #e10100;
+}
+html .webzin_list p {
+    font-size: 1.6rem;
+    line-height: 30px;
+}
+.webzin_list > ul{
+width: 100%;
+height: 200px;
+}
+html .webzin_list > ul > li > div:last-child {
+    height: 90px;
+}
+html #bo_sch {
+    float: none;
+    margin: 0 0 100px;
+}
+html #bo_sch input{
+    float: none;
+    width: 78%;
+}
+html #bo_sch select {
+    font-size: 1.8rem;
+}
+#bo_v_share .btn{
+padding: 0 10px;
+}
+#bo_btn_top{
+margin: 100px 0 50px;
+}
+.fa-eye:before{
+background: url(../img/ico_eye.svg) center center;
+background-size: cover;
+}
+#bo_v_con{
+font-size: 1.6rem;
+}
+html #bo_list_total {
+    font-size: 1.6rem;
+}
+.wr_content textarea{
+font-size: 1.6rem;
+line-height: 25px;
+}
+/* EDIT --- E */

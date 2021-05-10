@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>빅이슈 코리아</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css" />
+  <link href="../css/jquery.bxslider.css" rel="stylesheet" />
+  <link href="../css/normalize.css" rel="stylesheet" />
+  <link href="../css/webfont.css" rel="stylesheet" />
+  <link href="../css/common.css" rel="stylesheet" />
+  <link href="program_main.css" rel="stylesheet" />
+  <link href="program_tablet.css" rel="stylesheet" media="all and (min-width:768px) and (max-width:1279px)" />
+  <link href="program_mobile.css" rel="stylesheet" media="all and (max-width:767px)" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png" />
+  <link rel="manifest" href="../favicon/site.webmanifest" />
+  <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <script src="../js/jquery_1.12.3.min.js"></script>
+  <script src="../js/jquery.bxslider.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+
+<body>
+  <!-- HEADER S -->
+  <header id="bigissue_hd_wrap">
+    <div id="bigissue_hd" class="center clear_fix">
+      <h1 class="logo">
+        <a href="../index.html">
+          <span class="blind">빅이슈 코리아</span>
+        </a>
+      </h1>
+      <nav id="bigissue_gnb" class="pc_con">
+        <ul class="clear_fix">
+          <li>
+            <a href="start.html" class="depth1 click">빅이슈판매원</a>
+            <ul class="depth2">
+              <li><a href="start.html">빅판이되려면</a></li>
+              <li><a href="#">빅이슈판매원</a></li>
+              <li><a href="#">빅이슈판매처</a></li>
+              <li><a href="#">빅판의이모저모</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="depth1">빅이슈서포터</a>
+            <ul class="depth2">
+              <li><a href="#">후원하기</a></li>
+              <li><a href="#">빅이슈판매도우미</a></li>
+              <li><a href="#">빅이슈서포터즈</a></li>
+              <li><a href="#">재능기부</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="depth1">매거진빅이슈</a>
+            <ul class="depth2">
+              <li><a href="#">온라인구매</a></li>
+              <li><a href="#">신간·과월호</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="depth1">광고·제휴</a>
+            <ul class="depth2">
+              <li><a href="#">광고문의</a></li>
+              <li><a href="#">제휴문의</a></li>
+              <li><a href="#">취재문의</a></li>
+              <li><a href="#">인쇄·디자인</a></li>
+              <li><a href="#">기타문의</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="program.html" class="depth1">자립지원프로그램</a>
+            <ul class="depth2">
+              <li><a href="#">홈리스월드컵</a></li>
+              <li><a href="#">다양성컵</a></li>
+              <li><a href="program.html">BIK프로그램</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../../bbs/board.php?bo_table=notice" class="depth1 click">소개</a>
+            <ul class="depth2">
+              <li><a href="../../bbs/board.php?bo_table=bigissue_notice">공지사항</a></li>
+              <li><a href="#">걸어온길</a></li>
+              <li><a href="#">파트너쉽</a></li>
+              <li><a href="#">오시는길</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <button class="m_btn_gnb m_con">모바일 메뉴 열기</button>
+      <nav id="bigissue_m_gnb" class="m_con">
+        <ul class="clear_fix">
+          <li>
+            <a href="start.html" class="m_depth1">빅이슈판매원</a>
+            <ul class="m_depth2">
+              <li><a href="start.html">빅판이되려면</a></li>
+              <li><a href="#">빅이슈판매원</a></li>
+              <li><a href="#">빅이슈판매처</a></li>
+              <li><a href="#">빅판의이모저모</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="m_depth1">빅이슈서포터</a>
+            <ul class="m_depth2">
+              <li><a href="#">후원하기</a></li>
+              <li><a href="#">빅이슈판매도우미</a></li>
+              <li><a href="#">빅이슈서포터즈</a></li>
+              <li><a href="#">재능기부</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="m_depth1">매거진빅이슈</a>
+            <ul class="m_depth2">
+              <li><a href="#">온라인구매</a></li>
+              <li><a href="#">신간·과월호</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="m_depth1">광고·제휴</a>
+            <ul class="m_depth2">
+              <li><a href="#">광고문의</a></li>
+              <li><a href="#">제휴문의</a></li>
+              <li><a href="#">취재문의</a></li>
+              <li><a href="#">인쇄·디자인</a></li>
+              <li><a href="#">기타문의</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="program.html" class="m_depth1">자립지원프로그램</a>
+            <ul class="m_depth2">
+              <li><a href="#">홈리스월드컵</a></li>
+              <li><a href="#">다양성컵</a></li>
+              <li><a href="program.html">BIK프로그램</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../../bbs/board.php?bo_table=notice" class="m_depth1">소개</a>
+            <ul class="m_depth2">
+              <li><a href="../../bbs/board.php?bo_table=bigissue_notice">공지사항</a></li>
+              <li><a href="#">걸어온길</a></li>
+              <li><a href="#">파트너쉽</a></li>
+              <li><a href="#">오시는길</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="bg_gnb"></div>
+      <div class="login">
+        <a href="#"><img src="../img/btn_user.svg" alt="로그인 버튼" class="pc_con" /></a>
+      </div>
+    </div>
+  </header>
+  <!-- HEADER E -->
+
+  <!-- CONTENTS S -->
+  <div>
+    <!-- ADVERTISE S -->
+    <div id="ad_wrap" class="pc_con">
+      <section id="ad" class="center clear_fix">
+        <h2 class="blind">뉴스레터 신청</h2>
+        <form class="subscribe">
+          <fieldset>
+            <legend class="blind">뉴스레터</legend>
+            <label for="email">빅이슈의 <span>뉴스레터</span>를 구독하세요</label>
+            <input type="text" id="email" placeholder="E-Mail" />
+            <button type="button" class="button">신청</button>
+          </fieldset>
+        </form>
+        <div class="support">
+          <strong>문자후원은 <span>#12345678</span> 문자 한 통에 2,000원이
+            후원됩니다.</strong>
+        </div>
+      </section>
+    </div>
+    <!-- ADVERTISE E -->
+
+    <!-- PROGRAM LNB WRAP S -->
+    <div id="program_lnb_wrap">
+      <div id="lnb_visual" class="center">
+        <h2>BIK 프로그램</h2>
+        <ul class="location clear_fix">
+          <li><a href="/index.html">HOME</a></li>
+          <li><a href="#">자립지원 프로그램</a></li>
+          <li><a href="#">BIK 프로그램</a></li>
+        </ul>
+      </div>
+      <div id="lnb_wrap" class="clear_fix">
+        <ul class="lnb center clear_fix">
+          <li><a href="#">홈리스 월드컵</a></li>
+          <li><a href="#">다양성 컵</a></li>
+          <li><a href="#">BIK 프로그램</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- PROGRAM LNB WRAP E -->
+
+    <h2 id="program_title" class="center">BIG ISSUE KOREA<br />PROGRAM
+    </h2>
+    <!-- SELFRELIANCE WRAP S -->
+    <div id="program_selfreliance" class="center clear_fix">
+      <div id="program_selfreliance_txt" class="clear_fix">
+        <h3>자립 지원 프로그램</h3>
+        <div>
+          <p>자립과 재취업 지원</p>
+          <strong>재취업 연결</strong>
+          <p>빅이슈의 주거 취약 계층을 위한 주거 상향 지원사업을 통해 안정적인 보금자리로서 매입임대주택에 입주한 가구 수는 99호 이며, 빅이슈 판매원 일거리 서비스 활동으로 매입 임대 주택에 입주한
+            가구
+            수는 46명 입니다. 이 중 49명이 빅이슈를 통해 재취업으로 연결되었습니다.</p>
+        </div>
+        <div>
+          <p>코로나19로 인한 <br class="m_con">주거지원금 도입</p>
+          <strong>주거지원금 도입</strong>
+          <div class="pc_con">주거지원금 도입 소개 사진</div>
+          <p>코로나19로 인한 작년 대비 잡지 판매 수익의 60%가 감소한 상황에서 빅이슈 주거 지원금은 빅판에게 든든한 버팀목이 되어주고 있습니다.</p>
+        </div>
+      </div>
+      <div id="program_selfreliance_visual">
+        <span>빅이슈는 핀란드에서 홈리스를 대상으로 시행되고 있는 ‘주택우선’ 정책과 ‘기본소득’에 영감을 받아 홈리스 판매원이 빅판으로 활동하는 동안 취업과 주거비를 지원합니다.</span>
+      </div>
+    </div>
+    <div id="m_program_selfreliance" class="m_con center clear_fix">
+      <div id="m_program_selfreliance_visual">
+        <h3>자립 지원 프로그램</h3>
+        <span>
+          빅이슈는 핀란드에서 홈리스를 대상으로 시행되고 있는 ‘주택우선’ 정책과 ‘기본소득’에 영감을 받아 홈리스 판매원이 빅판으로 활동하는 동안 취업과 주거비를 지원합니다.
+        </span>
+        <div>자립 지원 프로그램</div>
+      </div>
+      <div id="m_program_selfreliance_txt" class="clear_fix">
+        <div class="m_program_selfreliance_txt_top clear_fix">
+          <div>
+            <strong>재취업 연결</strong>
+            <p>자립과 재취업<br> 지원</p>
+          </div>
+          <p>
+            빅이슈의 주거 취약 계층을 위한 주거 상향 지원사업을 통해 안정적인 보금자리로서 매입임대주택에 입주한 가구 수는 99호 이며, 빅이슈 판매원 일거리 서비스 활동으로 매입 임대 주택에 입주한 가구
+            수는 46명 입니다. 이 중 49명이 빅이슈를 통해 재취업으로 연결되었습니다.
+          </p>
+        </div>
+        <div class="m_program_selfreliance_txt_bottom clear_fix">
+          <div>
+            <strong>주거지원금 도입</strong>
+            <p>코로나19로 인한<br />주거지원금 도입</p>
+          </div>
+          <p>
+            코로나19로 인한 작년 대비 잡지 판매 수익의 60%가 감소한 상황에서 빅이슈 주거 지원금은 빅판에게 든든한 버팀목이 되어주고 있습니다.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- SELFRELIANCE WRAP E -->
+
+    <!-- EDUCATION WRAP S -->
+    <div id="program_education" class="center clear_fix">
+      <div id="program_education_txt" class="clear_fix">
+        <h3>교육 프로그램</h3>
+        <div>
+          <p>홈리스 인식 개선 문화활동 지원</p>
+          <strong>예술 빅이슈</strong>
+          <p>빅이슈는 홈리스 인식 개선을 위해 홈리스 발레단, 홈리스 음악 밴드인 봄날밴드의 콘서트와 앨범 판매를 지원합니다. 시인을 직접 초청해 빅판의 정서를 글로 풀어내는 민들레 예술 문학단과 겨울철
+            홈리스의 의류를 모으는 캠페인도 지원합니다.</p>
+        </div>
+        <div>
+          <p>바리스타 교육과 카페 운영</p>
+          <strong>카페 빅이슈</strong>
+          <div class="pc_con">카페 빅이슈 소개 사진</div>
+          <p>“독자님들의 많은 관심과 사랑이 있었기에 목요일 하루만큼은 어엿한 카페의 사장이자 바리스타가 될 수 있었습니다.” </p>
+        </div>
+      </div>
+      <div id="program_education_visual">
+        <span>빅이슈는 홈리스 인식 개선을 위해 예술 분야의 다양한 교육 프로그램을 운영합니다. 바리스타 교육을 비롯한 음악, 문학, 무용 등의 문화활동을 지원합니다.</span>
+      </div>
+    </div>
+    <div id="m_program_education" class="m_con center clear_fix">
+      <div id="m_program_education_visual">
+        <h3>교육 프로그램</h3>
+        <span>
+          빅이슈는 홈리스 인식 개선을 위해 예술 분야의 다양한 교육 프로그램을 운영합니다. 바리스타 교육을 비롯한 음악, 문학, 무용 등의 문화활동을 지원합니다.
+        </span>
+        <div>교육 프로그램</div>
+      </div>
+      <div id="m_program_education_txt" class="clear_fix">
+        <div class="m_program_education_txt_top clear_fix">
+          <div>
+            <strong>예술 빅이슈</strong>
+            <p>홈리스 인식 개선<br />문화활동 지원</p>
+          </div>
+          <p>
+            빅이슈는 홈리스 인식 개선을 위해 홈리스 발레단, 홈리스 음악 밴드인 봄날밴드의 콘서트와 앨범 판매를 지원합니다. 시인을 직접 초청해 빅판의 정서를 글로 풀어내는 민들레 예술 문학단과 겨울철
+            홈리스의 의류를 모으는 캠페인도 지원합니다.
+          </p>
+        </div>
+        <div class="m_program_education_txt_bottom clear_fix">
+          <div>
+            <strong>카페 빅이슈</strong>
+            <p>바리스타 교육과<br />카페 운영</p>
+          </div>
+          <p>
+            “독자님들의 많은 관심과 사랑이 있었기에 목요일 하루만큼은 어엿한 카페의 사장이자 바리스타가 될 수 있었습니다.”
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- EDUCATION WRAP E -->
+
+    <!-- CULTURE WRAP S -->
+    <div id="program_culture" class="center clear_fix">
+      <h3>문화 프로그램</h3>
+      <ul id="culture_txt" class="clear_fix">
+        <li class="culture_visual">
+          <div>문화 프로그램 안내 이미지1</div>
+          <strong>빅판의 성희롱 예방교육</strong>
+          <p>빅이슈코리아는 성평등한 조직문화를 만들어가자는 목표를 가지고 고민을 시작했습니다. 단시간에 성평등을 완성하기보다 어떤 방식으로 조직 내 평등한 문화를 만들 수 있을지 생각..</p>
+        </li>
+        <li class="culture_visual">
+          <div>문화 프로그램 안내 이미지2</div>
+          <strong>건강 관리 프로그램</strong>
+          <p>매주 목요일, 서울혁신파크 내 청년청에서는 빅이슈 판매원분들을 위한 운동프로그램인 '득근득근'이 진행됩니다. '득근득근'은 장시간 서서 활동하시는 빅이슈 판매원 (..</p>
+        </li>
+        <li class="culture_visual">
+          <div>문화 프로그램 안내 이미지3</div>
+          <strong>비건케이크 요리사</strong>
+          <p>빅이슈 코리아는 홈리스의 자립과 함꼐 성소수자, 동물권 등 사회적 소수자의 목소리도 함께 응원합니다. 비건은 동물성 음식을 먹지 않는 완전한 채식으로, 최근 무분별하..</p>
+        </li>
+        <li class="culture_visual">
+          <div>문화 프로그램 안내 이미지4</div>
+          <strong>빅이슈 판매원 편의점</strong>
+          <p>빅판의 점심은 우리가 지원하고 있으니 안심하라구! 빅판의 식사 지원을 위해 GS25와 빅이슈코리아가 만났습니다. GS25는 거리 위 빅이슈 판매원의 자립을 응원하고, 그들의..</p>
+        </li>
+      </ul>
+      <div class="center2 circle_wrap pc_con">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+      </div>
+    </div>
+    <!-- CULTURE WRAP E -->
+  </div>
+  <!-- CONTENTS E -->
+
+  <!-- FOOTER S -->
+  <footer id="bigissue_ft_wrap">
+    <div id="bigissue_ft" class="center clear_fix">
+      <address>
+        <a tel:02-1234-5678>TEL.<br />02. 1234. 5678</a><br /><span>단체명 : 사단법인 빅이슈코리아<br />
+          주소 : 서울특별시 축구 바로 684, 1동 313호 <br />대표자 : ㅇㅇㅇ
+          | 고유번호 : 123-45-678910</span>
+      </address>
+      <div class="info">
+        <div class="sns_wrap clear_fix">
+          <a href="#"><img src="../img/ico_facebook.svg" alt="빅이슈코리아 페이스북"></a>
+          <a href="#"><img src="../img/ico_youtube.svg" alt="빅이슈코리아 유튜브"></a>
+          <a href="#"><img src="../img/ico_twitter.svg" alt="빅이슈코리아 트위터"></a>
+          <a href="#"><img src="../img/ico_instagram.svg" alt="빅이슈코리아 인스타그램"></a>
+          <a href="#"><img src="../img/ico_naver.svg" alt="빅이슈코리아 블로그"></a>
+        </div>
+        <div class="sitemap_wrap clear_fix">
+          <a href="#" class="pc_con">빅이슈판매원</a>
+          <a href="#" class="pc_con">빅이슈서포터</a>
+          <a href="#">매거진</a>
+          <a href="#">광고제휴</a>
+          <a href="#">자립지원프로그램</a>
+          <a href="#" class="pc_con">소개</a>
+        </div>
+        <div class="sitebox_wrap clear_fix">
+          <a href="#">빅이슈 쇼핑몰</a>
+          <a href="#">대행 판매 문의</a>
+        </div>
+      </div>
+      <small class="copy">본 사이트는 포트폴리오 용도로 제작된 <br class="m_con">가상의 사이트입니다.<br /><br />모든 콘텐츠의 저작권은 <br
+          class="m_con">빅이슈코리아에 있음을 밝힙니다. <br /><br />Design &amp; Publishing by Lim Sun
+      </small>
+    </div>
+    <a href="#bigissue_mb" class="btn_top">TOP</a>
+  </footer>
+  <!-- FOOTER E -->
+</body>
+
+</html>

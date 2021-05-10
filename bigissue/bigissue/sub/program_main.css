@@ -1,0 +1,390 @@
+@charset "utf-8";
+/* COMMON ---- S */
+body,
+html {
+    font-size: 10px;
+    color: #191919;
+}
+.blind {
+    position: absolute;
+    left: -9999px;
+}
+.center {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.clear_fix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.click:before {
+    position: absolute;
+    left: 33%;
+    content: "";
+    clear: both;
+    display: block;
+    width: 55px;
+    height: 16px;
+    background: url("../img/img_click.png");
+    background-size: cover;
+}
+/* COMMON ---- E */
+
+/* BIK PROGRAM LNB ---- S */
+#program_lnb_wrap {
+    width: 100%;
+    height: 425px;
+    margin-bottom: 57px;
+    background: url("../img/bg_program_lnb.png") no-repeat center center;
+    background-size: cover;
+}
+#lnb_visual {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#lnb_visual > h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+    transform: translateX(-50%) translateY(-50%);
+}
+.location {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
+.location > li {
+    float: left;
+}
+.location > li > a {
+    color: #fff;
+    font-size: 17px;
+}
+.location > li:nth-of-type(1) > a:after,
+.location > li:nth-of-type(2) > a:after {
+    content: "";
+    clear: both;
+    display: inline-block;
+    width: 5px;
+    height: 12px;
+    margin: 0 10px;
+    background: url("../img/ico_arrow.png") no-repeat;
+}
+#lnb_wrap {
+    height: 57px;
+    border-bottom: 1px solid #e4e4e4;
+}
+.lnb > li {
+    display: inline-block;
+    float: left;
+    width: 33.333%;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    line-height: 56px;
+    text-align: center;
+}
+.lnb > li:nth-of-type(1) {
+    border-left: 1px solid #e4e4e4;
+}
+.lnb > li:nth-of-type(3) {
+    background: #e10100;
+}
+.lnb > li:nth-of-type(3) > a {
+    color: #fff;
+}
+.lnb > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4d4d4d;
+    transition: 0.3s;
+}
+.lnb > li > a:focus,
+.lnb > li > a:hover {
+    background: #e10100;
+    color: #fff;
+}
+/* BIK PROGRAM LNB ---- E */
+
+/* PROGRAM TITLE ---- S */
+#program_title {
+    height: 400px;
+    padding: 150px 0;
+    background: url(../img/bg_program_title.png), url("../img/bg_program_title2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-size: 4rem;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+}
+/* PROGRAM TITLE ---- E */
+
+/* PROGRAM SELFRELIANCE ---- S */
+#program_selfreliance {
+    height: 700px;
+    margin-bottom: 90px;
+    padding: 0 20px;
+    border-bottom: 2px solid #e4e4e4;
+}
+#program_selfreliance_visual {
+    float: left;
+    width: 48%;
+    height: 600px;
+    background: url("../img/bg_program_Selfreliance1.png") no-repeat center center;
+    background-size: cover;
+}
+#program_selfreliance_visual > span {
+    display: inline-block;
+    width: 100%;
+    height: 150px;
+    margin-top: 460px;
+    padding: 30px;
+    background: #4d4d4d;
+    font-size: 1.9rem;
+    color: #fff;
+    line-height: 30px;
+}
+#program_selfreliance_txt {
+    float: right;
+    width: 50%;
+}
+#program_selfreliance_txt > h3 {
+    margin: 100px 0 40px;
+    padding: 0 0 20px;
+    border-bottom: 5px solid #e10100;
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+}
+#program_selfreliance_txt > div {
+    width: 50%;
+    padding: 0 20px;
+}
+#program_selfreliance_txt > div:nth-of-type(1) {
+    float: left;
+}
+#program_selfreliance_txt > div:nth-of-type(2) {
+    float: right;
+}
+#program_selfreliance_txt > div > p {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+#program_selfreliance_txt > div > strong {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px;
+    background: #e10100;
+    font-size: 2.4rem;
+    color: #fff;
+    line-height: 35px;
+}
+#program_selfreliance_txt > div > div {
+    width: 100%;
+    height: 137px;
+    margin: 5px 0;
+    background: url("../img/bg_program_Selfreliance2.png") no-repeat;
+    background-size: contain;
+    text-indent: -9999px;
+}
+#program_selfreliance_txt > div > p:last-child {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 35px;
+}
+/* PROGRAM SELFRELIANCE ---- E */
+
+/* PROGRAM EDUCATION ---- S */
+#program_education {
+    height: 700px;
+    margin-bottom: 60px;
+    padding: 0 20px;
+    border-bottom: 2px solid #e4e4e4;
+}
+#program_education_visual {
+    float: right;
+    width: 50%;
+    height: 600px;
+    background: url("../img/bg_program_education1.png") no-repeat center center;
+    background-size: cover;
+}
+#program_education_visual > span {
+    display: inline-block;
+    height: 150px;
+    margin-top: 460px;
+    padding: 30px;
+    background: #4d4d4d;
+    font-size: 1.9rem;
+    color: #fff;
+    line-height: 30px;
+}
+#program_education_txt {
+    float: left;
+    width: 48%;
+}
+#program_education_txt > h3 {
+    margin: 100px 0 40px;
+    padding: 0 0 20px;
+    border-bottom: 5px solid #e10100;
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+}
+#program_education_txt > div {
+    width: 50%;
+    padding: 0 20px;
+}
+#program_education_txt > div:nth-of-type(1) {
+    float: left;
+}
+#program_education_txt > div:nth-of-type(2) {
+    float: right;
+}
+#program_education_txt > div > p {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+#program_education_txt > div > strong {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px;
+    background: #e10100;
+    font-size: 2.4rem;
+    color: #fff;
+    line-height: 35px;
+}
+#program_education_txt > div > div {
+    width: 100%;
+    height: 137px;
+    margin: 5px 0;
+    background: url("../img/bg_program_education2.png") no-repeat;
+    background-size: contain;
+    text-indent: -9999px;
+}
+#program_education_txt > div > p:last-child {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 35px;
+}
+/* PROGRAM EDUCATION ---- E */
+
+/* PROGRAM CULTURE ---- S */
+#program_culture {
+    position: relative;
+    height: 850px;
+}
+#program_culture > h3 {
+
+    width: 50%;
+    margin: 100px auto 40px;
+    padding: 0 0 20px;
+    border-bottom: 5px solid #e10100;
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+}
+#program_culture > ul {}
+#program_culture > ul > li {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+#program_culture > ul > li > div {
+    width: 100%;
+    height: 290px;
+    text-indent: -9999px;
+}
+#program_culture > ul > li:nth-of-type(1) > div {
+    background: url("../img/bg_program_culture1.png") no-repeat center center;
+    background-size: cover;
+}
+#program_culture > ul > li:nth-of-type(2) > div {
+    background: url("../img/bg_program_culture2.png") no-repeat center center;
+    background-size: cover;
+}
+#program_culture > ul > li:nth-of-type(3) > div {
+    background: url("../img/bg_program_culture3.png") no-repeat center center;
+    background-size: cover;
+}
+#program_culture > ul > li:nth-of-type(4) > div {
+    background: url("../img/bg_program_culture4.png") no-repeat center center;
+    background-size: cover;
+}
+#program_culture > ul > li > strong {
+    display: block;
+    margin: 20px 0;
+    font-size: 2.2rem;
+    text-align: center;
+}
+#program_culture > ul > li > p {
+    font-size: 1.6rem;
+    line-height: 24px;
+}
+.circle_wrap {
+    width: 1280px;
+    overflow: hidden;
+}
+.circle {
+    position: absolute;
+    z-index: -1;
+    bottom: -100px;
+    border-radius: 150px;
+    animation: 4s alternate infinite ease-in-out;
+}
+.circle1 {
+    width: 300px;
+    height: 300px;
+    background: #e10100;
+    animation-name: circle1_move;
+}
+.circle2 {
+    width: 200px;
+    height: 200px;
+    background: #4d4d4d;
+    animation-name: circle2_move;
+}
+@keyframes circle1_move {
+    0% {
+        left: 100px;
+        transform: rotate(0deg);
+        opacity: 0.5;
+    }
+    100% {
+        left: 500px;
+        transform: rotate(720deg);
+        opacity: 0.8;
+    }
+}
+@keyframes circle2_move {
+    0% {
+        left: 150px;
+        transform: rotate(0deg);
+        opacity: 0.4;
+    }
+    50% {
+        left: 300px;
+        transform: rotate(540deg);
+        opacity: 0.8;
+    }
+    100% {
+        left: 700px;
+        transform: rotate(360deg);
+        opacity: 0.4;
+    }
+}
+.circle > img {
+    width: 100%;
+    padding: 30% 20% 50%;
+}
+/* PROGRAM CULTURE ---- E */

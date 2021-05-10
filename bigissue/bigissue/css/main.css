@@ -1,0 +1,396 @@
+@charset "utf-8";
+/* MAIN BANNER ---- S */
+#bigissue_mb_wrap {
+    height: 580px;
+    margin-bottom: 80px;
+}
+
+/* SLIDE1 ----- S */
+.slide {
+    position: relative;
+    height: 580px;
+    overflow: hidden;
+    background: no-repeat center center;
+}
+.slide1 {
+    background-image: url("../img/bg_main_banner.jpg");
+}
+.slide1_wrap {
+    position: absolute;
+    bottom: 135px;
+    right: 120px;
+}
+.slide1 > div > span {
+    display: block;
+}
+.slide1 > div > span:nth-of-type(1) {
+    font-size: 7rem;
+    font-weight: 800;
+    color: #e10100;
+}
+.slide1 > div > span:nth-of-type(2) {
+    display: block;
+    margin: 45px 50px 45px 0;
+    font-size: 2.4rem;
+    text-align: center;
+}
+.button_wrap {
+    width: 400px;
+    margin-left: 50px;
+}
+.button_wrap > a:nth-of-type(1) {
+    float: left;
+    line-height: 60px;
+}
+.button_wrap > a:nth-of-type(2) {
+    float: right;
+    line-height: 60px;
+}
+/* SLIDE1 ----- E */
+
+/* SLIDE2 ----- S */
+.slide2 {
+    background-image: url("../img/bg_sub_banner.jpg");
+}
+.slide2 > div {
+    position: absolute;
+    top: 60%;
+    margin-left: 100px;
+}
+.slide2 > div > h2 {
+    font-size: 6rem;
+    font-weight: 800;
+}
+.slide2 > div > h2 > span {
+    font-size: 2.4rem;
+    font-weight: normal;
+}
+.slide2 > div > p {
+    position: absolute;
+    top: -40px;
+    border-bottom: 2px solid #e10100;
+    font-size: 2.8rem;
+}
+.slide2 > .btn_design_overlap {
+    position: absolute;
+    right: 200px;
+    top: 430px;
+    margin: 0;
+}
+.sub_banner_move {
+    float: right;
+    transform: scale(0.5) rotatez(-20deg);
+}
+.sub_banner_move {
+    float: left;
+    margin: 70px 0 0 100px;
+    animation: biggom 1s infinite;
+}
+@keyframes biggom {
+    0% {
+        transform: rotateZ(-5deg);
+    }
+    50% {
+        transform: rotateZ(5deg);
+    }
+    100% {
+        transform: rotateZ(-5deg);
+    }
+}
+/* SLIDE2 ----- E */
+
+/* SLIDE3 ----- S */
+.slide3 {
+    background-image: url("../img/bg_sub2_banner.jpg");
+    background-size: cover;
+}
+.slide3 > div > img {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.slide3 > div > span {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 10px #000, 1px 1px 10px #000;
+    line-height: 40px;
+}
+/* SLIDE3 ----- E */
+/* MAIN BANNER ---- E */
+
+/* CONTENTS ----- S */
+/* CONTENT1 ----- S */
+#content1_wrap {
+    overflow: hidden;
+    height: 744px;
+    background: url("../img/bg_content1.png") no-repeat center center;
+    background-size: cover;
+}
+#content1 {
+    width: 960px;
+    margin: 0 auto;
+    padding: 105px 0 0;
+}
+#content1 > div > div {
+    padding: 75px 0 0;
+}
+#content1 > div > div > p {
+    font-size: 3.2rem;
+    line-height: 55px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 10px #000, 1px 1px 10px #000;
+}
+.content1_button_wrap {
+    float: right;
+}
+.content1_left {
+    float: left;
+}
+.content1_right {
+    float: right;
+}
+.biglssue {
+    display: block;
+    width: 294px;
+    height: 405px;
+    background: url("../img/img_content1_white.png") no-repeat;
+    transition: 0.3s;
+    text-indent: -9999px;
+}
+.biglssue:hover {
+    background: url("../img/img_content1_red.png") no-repeat;
+}
+/* CONTENT1 ----- E */
+
+/* CONTENT2 ----- S */
+#content2_wrap {
+    background: url("../img/bg_content2.jpg") no-repeat top center;
+    background-size: cover;
+}
+#content2 {
+    width: 100%;
+    height: 1000px;
+}
+#content2 > h2 {
+    padding: 100px 0;
+    font-size: 3.6rem;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+}
+#content2 > h2 > span {
+    background: #fff;
+    font-size: 4rem;
+    font-weight: 800;
+    color: #191919;
+}
+.img_content2 {
+    text-indent: -9999px;
+}
+.img_content2_interviews {
+    height: 250px;
+    background-position: center center;
+    background: url("../img/img_content2_interviews.jpg") no-repeat;
+}
+.img_content2_bigissue {
+    height: 250px;
+    background-position: center center;
+    background: url("../img/img_content2_bigissue.jpg") no-repeat;
+}
+.img_content2_coverstory {
+    height: 250px;
+    background-position: center center;
+    background: url("../img/img_content2_coverstory.jpg") no-repeat;
+}
+.img_content2_social {
+    height: 250px;
+    background-position: center center;
+    background: url("../img/img_content2_social.jpg") no-repeat;
+}
+.img_content2_essay {
+    height: 250px;
+    background-position: center center;
+    background: url("../img/img_content2_essay.jpg") no-repeat;
+}
+.img_content2_special {
+    height: 250px;
+    background-position: center center;
+    background: url("../img/img_content2_special.jpg") no-repeat;
+}
+.img_content2_culture {
+    height: 250px;
+    background-position: center center;
+    background: url("../img/img_content2_culture.jpg") no-repeat;
+}
+.bxslider2_slide_wrap {
+    height: 504px;
+    background: #fff;
+}
+.bxslider2_slide_wrap a:focus,
+.bxslider2_slide_wrap a:hover {
+    color: #191919;
+}
+.bxslider2_slide_wrap > div > a:nth-of-type(1) {
+    display: block;
+    padding-bottom: 20px;
+    font-size: 2.6rem;
+    color: #b2b2b2;
+}
+.bxslider2_slide_wrap strong {
+    display: block;
+    margin: 20px 0 10px;
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #191919;
+}
+.bxslider2_slide_wrap p {
+    font-size: 1.5rem;
+    line-height: 20px;
+}
+.bxslider2_slide {
+    transition: 0.3s;
+    padding: 40px 30px;
+}
+.bxslider2_slide:focus,
+.bxslider2_slide:hover {
+    box-shadow: 0 0 10px #888;
+}
+/* CONTENT2 ----- E */
+
+/* CONTENT3 ----- S */
+#content3_wrap {
+    position: relative;
+}
+#content3 {
+    overflow: hidden;
+    margin-bottom: 300px;
+}
+.standingorder {
+    float: left;
+    position: relative;
+    margin: 0 176px 0 0;
+}
+.communication h3,
+.standingorder > h3 {
+    display: inline-block;
+    width: 125px;
+    background: #e10100;
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 0 22px;
+}
+.standingorder > a:nth-of-type(1) {
+    display: block;
+    width: 522px;
+    height: 617px;
+    background: url(../img/img_standingorder.jpg)no-repeat;
+}
+.standingorder > a > p {
+    width: 100%;
+    padding: 270px 0 0;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+.standingorder > a > p > span {
+    font-size: 2.4rem;
+}
+.communication {
+    float: right;
+}
+.notice {
+    position: relative;
+    margin-bottom: 60px;
+}
+.notice > ul > li {
+    border-bottom: 1px solid #e4e4e4;
+    font-size: 1.6rem;
+    line-height: 40px;
+}
+.video {
+    position: relative;
+}
+.video > iframe {
+    display: block;
+    width: 522px;
+    height: 294px;
+    border: none;
+}
+.more {
+    position: absolute;
+    top: 7px;
+    right: 0;
+    font-size: 1.8rem;
+    color: #191919;
+}
+.circle_wrap {
+    width: 1280px;
+    overflow: hidden;
+}
+.circle {
+    position: absolute;
+    z-index: -1;
+    bottom: -380px;
+    border-radius: 150px;
+    animation: 4s alternate infinite ease-in-out;
+}
+.circle1 {
+    width: 300px;
+    height: 300px;
+    background: #e10100;
+    animation-name: circle1_move;
+}
+.circle2 {
+    width: 200px;
+    height: 200px;
+    background: #4d4d4d;
+    animation-name: circle2_move;
+}
+@keyframes circle1_move {
+    0% {
+        left: 100px;
+        transform: rotate(0deg);
+        opacity: 0.5;
+    }
+    100% {
+        left: 500px;
+        transform: rotate(720deg);
+        opacity: 0.8;
+    }
+}
+@keyframes circle2_move {
+    0% {
+        left: 150px;
+        transform: rotate(0deg);
+        opacity: 0.4;
+    }
+    50% {
+        left: 300px;
+        transform: rotate(540deg);
+        opacity: 0.8;
+    }
+    100% {
+        left: 700px;
+        transform: rotate(360deg);
+        opacity: 0.4;
+    }
+}
+.circle > img {
+    width: 100%;
+    padding: 30% 20% 50%;
+}
+/* CONTENT3 ----- E */
+/* CONTENTS ----- E */
+

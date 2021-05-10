@@ -1,0 +1,232 @@
+@charset "utf-8";
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+	position:relative;
+    /* margin: 0 auto 60px 원본에서는 페이저나 콘트롤스(스타트, 정지) 버튼들의 위치 때문에 하단 마진 60px 있었음. */
+	padding: 0;
+    margin:0px auto;
+	*zoom: 1;
+}
+
+.bx-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-viewport {    
+	/*fix other elements on the page moving (on Chrome)*/
+	-webkit-transform: translatez(0);
+	-moz-transform: translatez(0);
+    	-ms-transform: translatez(0);
+    	-o-transform: translatez(0);
+    	transform: translatez(0);
+}
+
+
+/* 페이저(하단 둥근 버튼들) 와 스타트,정지 버튼 기본 위치 설정 */
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+width: 100%;
+}
+
+
+/* PAGER - 각 슬라이더로 이동하는 하단의 둥근 버튼들 */
+
+.bx-wrapper .bx-pager {
+width:100wv;
+text-align: center;
+font-size: .85em;
+font-weight: bold;
+line-height:.85em;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+
+/* 기본 페이저 디자인 */
+.bx-wrapper .bx-pager.bx-default-pager a {
+display:inline-block;
+width:370px;
+outline: 0;
+font-size:22px;
+height:60px;
+line-height:60px;
+font-weight:normal;
+color:#b2b2b2;
+border-top:2px solid #ddd;
+transition:0.2s;
+}
+.bx-pager.bx-default-pager a:focus{
+color:#000;
+border-top:5px solid #555;
+}
+
+/* 마우스 올렸을 때 페이저 디자인 */
+.bx-wrapper .bx-pager.bx-default-pager a:hover{
+}
+/* 활성화 상태의 페이저 디자인 */
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.bx-wrapper .bx-prev {
+	left:30%;
+	/* background: url(images/controls.png) no-repeat 0 -32px; 원본 이전배너보기 버튼 배경이미지 */
+    background:url(../img/btn_arrow_left.svg) no-repeat;
+}
+
+.bx-wrapper .bx-next {
+	right:30%;
+	/* background: url(images/controls.png) no-repeat -43px -32px; 원본 다음배너보기 버튼 배경이미지 */
+    background:url(../img/btn_arrow_right.svg) no-repeat;
+}
+
+/* 이전배너보기 마우스 호버 디자인 */
+.bx-wrapper .bx-prev:hover {
+}
+
+/* 다음배너보기 마우스 호버 디자인 */
+.bx-wrapper .bx-next:hover {
+}
+
+/* 이전, 다음 배너보기 버튼 공통 기본디자인 - 본인 배경 이미지에 맞게 속성 값 조절해야 함. */
+.bx-wrapper .bx-controls-direction a {
+	position:absolute;
+	top:-180px;
+	outline: 0;
+	width: 52px;
+	height: 52px;
+	text-indent: -9999px;
+	z-index: 9980;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+
+.bx-wrapper .bx-controls-auto {
+	text-align: center;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start {
+	display: block;
+	text-indent: -9999px;
+	width: 20px;   /* 배경이미지 크기에 맞게 width, height 값 변경 */
+	height: 20px;
+	outline: 0;
+	/*background: url(images/controls.png) -86px -11px no-repeat; 원본 스타트버튼 배경이미지*/
+    background:url(../img/play_button_off.png) no-repeat;
+    background-size:cover;
+	margin: 0 3px;
+}
+
+/* 스타트 버튼 마우스 호버시나, 활성화 상태일 때의 디자인 설정 */
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+	/*background-position: -86px 0; 원본에서는 버튼들이 스프라이트 이미지 형태였음.*/
+    background:url(../img/play_button.png) no-repeat;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+	display: block;
+	text-indent: -9999px;
+	width: 20px;
+	height: 20px;
+	outline: 0;
+	/*background: url(images/controls.png) -86px -44px no-repeat; 원본 정지버튼 배경이미지 */
+    background:url(../img/pause_button_off.png) no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+	/*background-position: -86px -33px; 원본에서는 버튼들이 스프라이트 이미지 형태였음.*/
+    background:url(../img/pause_button.png) no-repeat;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	text-align: left;
+	width: 80%;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	right: 0;
+	width: 120px;
+}
+
+/* IMAGE CAPTIONS */
+
+.bx-wrapper .bx-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #666\9;
+	background: rgba(80, 80, 80, 0.75);
+	width: 100%;
+}
+
+.bx-wrapper .bx-caption span {
+	color: #fff;
+	font-family: Arial;
+	display: block;
+	font-size: .85em;
+	padding: 10px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:767px){
+    /* 모바일에서 자막 제거 */
+    .bx-wrapper .bx-caption{
+        display:none;
+    }
+    
+    /* 모바일에서 페이저와 콘트롤 버튼 위치 수정 */
+    .bx-wrapper .bx-pager,
+    .bx-wrapper .bx-controls-auto {
+        bottom: 2px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
