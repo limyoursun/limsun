@@ -1,4 +1,4 @@
 # ༼ つ ◕_◕ ༽つ Suntfolio
-> http://limsun.co.kr/
+>[사이트 바로가기](https://limyoursun.github.io/limsun/)
 
 v. 2021_03
